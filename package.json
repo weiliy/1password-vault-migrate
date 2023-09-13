@@ -18,10 +18,10 @@
     "dist/src/vaults"
   ],
   "bin": {
-    "ev": "dist/src/cli.js"
+    "opvm": "dist/src/cli.js"
   },
   "scripts": {
-    "opvm": "node dist/src/cli.js",
+    "cli": "ts-node src/cli.ts",
     "lint": "eslint src/ --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "npm lint --fix",
     "test": "jest",
@@ -70,6 +70,7 @@
     "pkg": "^5.8.1",
     "prettier": "^3.0.3",
     "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
     "tsconfig-to-swcconfig": "^2.4.1",
     "typescript": "^5.2.2"
   },
